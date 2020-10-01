@@ -9,7 +9,7 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int n1, int n2);
+int gcd(int n1, int n2);// GCD stands for Greatest Common Divisor
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 int gcd(int n1, int n2)
 {
     if(n2 != 0)
-        return gcd(n2, n1 % n2);
+        return gcd(n2, n1 % n2);// Recursive Case
     else
-        return n1;
+        return n1;// Base Case
 }
